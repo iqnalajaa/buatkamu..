@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hai Sayaangg ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MUSIK -->
+    <audio id="musik" loop>
+        <source src="musikmp/Aku Jeje - Ceritanya Jatuh Cinta (Music Video) - Aku Jeje.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-btn" onclick="toggleMusic()">
+        🎵 <span id="musicText">Putar Musik</span>
+    </button>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+    <!-- VIDEO BACKGROUND -->
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="videobclground/2024-12-19-221310224.mp4" type="video/mp4">
+    </video>
+
+    <!-- LAPISAN GELAP -->
+    <div class="video-overlay"></div>
+
+    <!-- ISI -->
+    <div class="hero-content">
+
+        <p class="small-text">
+            HAPPY BIRTHDAY SAYANGG
+        </p>
+
+        <h1>
+            Cantikku,<br>
+            <span>Cintaku ❤️</span>
+        </h1>
+
+        <p>
+            Dari sekian banyak orang di dunia,
+            entah bagaimana aku bisa menemukan kamu.
+        </p>
+
+        <a href="#pesan" class="btn">
+            Buka Pesanku 💌
+        </a>
+
+    </div>
+
+    </section>
+
+    <section id="pesan" class="section">
+        <p class="subtitle"> 12 November 2026 </p>
+        <h2> Selamat Ulang Tahun Sayang</h2>
+        <div class="letter">
+            <p>
+                Selamat yaa cintaa
+            </p>
+
+            <p>
+                Sehat selalu, bahagia selalu, lancar dan 
+                deras rezekinyaa, selalu selamat dalam semua
+                hal juga panjang umur yaa sayaang..
+            </p>
+
+            <p class="quote">
+                Bahagia terus ya ayaangg
+            </p>
+
+            <p>
+                Aku juga berharap dan berdoa agar 
+                di hari ulang tahun kamu, aku selalu
+                bisa hadir dan membawakan perayaan kecil
+                untukmu 
+            </p>
+
+            <p>
+                Maaf ya sayang aku belum bisa banyak ngasih
+                hal ke kamu, aku baru bisa ngasih sesuatu yang
+                baru aku mampu, doain aku yaa, biar bisa bawa kan
+                hal yg lebih indah buat kamu, aku sayang pake banget
+                juga selalu ke kamuu...
+            </p>
+        </div>
+
+
+    </section>
+
+
+
+    <!-- PESAN -->
+    <section id="pesan" class="section">
+
+        <p class="subtitle">SEBUAH PESAN</p>
+
+        <h2>Untukmu ❤️</h2>
+
+        <div class="letter">
+
+            <p>
+                Hai kamu...
+            </p>
+
+            <p>
+                Aku mungkin tidak selalu pandai mengatakan
+                apa yang aku rasakan.
+                Tapi ada satu hal yang selalu ingin aku katakan:
+            </p>
+
+            <p class="quote">
+                "Terima kasih sudah hadir dalam hidupku."
+            </p>
+
+            <p>
+                Terima kasih untuk setiap senyum,
+                setiap cerita, setiap perhatian,
+                dan setiap waktu yang kita habiskan bersama.
+            </p>
+
+            <p>
+                Semoga kita bisa terus menciptakan
+                banyak kenangan indah bersama.
+            </p>
+
+            <p class="signature">
+                Selalu untukmu ❤️
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- GALERI FOTO -->
+    <section class="section gallery-section">
+
+        <p class="subtitle">KENANGAN KITA</p>
+
+        <h2>Foto-Foto Kita 📸</h2>
+
+        <div class="gallery">
+
+            <div class="photo">
+                <img src="foto/foto1.jpg" alt="Kenangan 1">
+            </div>
+
+            <div class="photo">
+                <img src="foto/foto2.jpg" alt="Kenangan 2">
+            </div>
+
+            <div class="photo">
+                <img src="foto/foto3.jpg" alt="Kenangan 3">
+            </div>
+
+            <div class="photo">
+                <img src="foto/foto4.jpg" alt="Kenangan 4">
+            </div>
+
+        </div>
+
+    </section>
+
+    
+
+
+    <!-- WAKTU BERSAMA -->
+    <section class="section counter-section">
+
+        <video class="counter-video" autoplay muted loop playsinline>
+            <source src="videobclground/2024-12-19-221310224.mp4" type="video/mp4">
+        </video>
+
+        <div class="counter-overlay"></div>
+        <div class="counter-content">
+
+          <p class="subtitle">PERJALANAN KITA</p>
+
+                <div id="counter" class="counter">
+                    Menghitung...
+                </div>
+
+            <h2>Menuju Menua Bersama ❤️</h2>
+        </div>
+      
+
+    </section>
+
+
+    <!-- PENUTUP -->
+    <section class="closing">
+
+        <div class="closing-content">
+
+            <div class="heart">
+                ❤️
+            </div>
+
+            <h2>Jika Aku Boleh Memilih...</h2>
+
+            <p>
+                Aku tetap akan memilih kamu.
+                Hari ini, besok, dan seterusnya.
+            </p>
+
+            <p class="big-love">
+                I Love You ❤️
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        @code by chatgpt but with cinta yg tulus dari iqbalalhaetamy
+    </footer>
+
+
+    <script src="script.js">
+
+        function mulaiWebsite() {
+    const musik = document.getElementById("musik");
+
+    musik.play();
+
+    // lanjutkan membuka isi website
+}
+
+    </script>
+
+</body>
+</html>

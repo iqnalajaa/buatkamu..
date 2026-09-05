@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #fff7f8;
+    color: #3d2b2e;
+}
+
+
+/* =====================
+   MUSIC BUTTON
+===================== */
+
+.music-btn {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+
+    z-index: 1000;
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 12px 18px;
+
+    background: rgba(255,255,255,0.9);
+    color: #8e4050;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+
+/* =====================
+   HERO
+===================== */
+
+.hero {
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    color: white;
+
+    overflow: hidden;
+}
+
+/* VIDEO BACKGROUND */
+
+.hero-video {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 0;
+}
+
+
+/* LAPISAN GELAP DI ATAS VIDEO */
+
+.video-overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(40, 10, 20, 0.50);
+
+    z-index: 1;
+}
+
+
+/* TEKS DI ATAS VIDEO */
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 700px;
+}
+
+.small-text {
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 8vw, 90px);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    font-style: italic;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.btn {
+    display: inline-block;
+
+    margin-top: 35px;
+
+    padding: 14px 30px;
+
+    background: white;
+    color: #8e4050;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+}
+
+
+/* =====================
+   SECTION
+===================== */
+
+.section {
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 100px 25px;
+
+    text-align: center;
+}
+
+.subtitle {
+    letter-spacing: 4px;
+    font-size: 12px;
+    color: #ffffff;
+
+    margin-bottom: 15px;
+}
+
+.section h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+
+/* =====================
+   LETTER
+===================== */
+
+.letter {
+    max-width: 700px;
+
+    margin: auto;
+
+    padding: 45px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+
+    text-align: left;
+
+    line-height: 1.9;
+}
+
+.letter p {
+    margin-bottom: 20px;
+}
+
+.quote {
+    text-align: center;
+
+    font-size: 25px;
+
+    font-style: italic;
+
+    color: #a84e61;
+}
+
+.signature {
+    text-align: right;
+
+    font-style: italic;
+}
+
+
+/* =====================
+   GALLERY
+===================== */
+
+.gallery-section {
+    max-width: 1200px;
+}
+
+.gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.photo {
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    height: 400px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.photo:hover img {
+    transform: scale(1.08);
+}
+
+
+/* =====================
+   VIDEO
+===================== */
+
+
+/* =====================
+   COUNTER
+===================== */
+
+.counter-section {
+   position: relative;
+
+   width: 100%;
+   min-height: 500px;
+
+   overflow: hidden;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   text-align: center;
+   color: white;
+
+
+
+    background: #f8e6e9;
+    max-width: none;
+}
+
+.counter-video {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    z-index: 0;
+}
+
+.counter-overlay{
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+}
+
+.counter-content {
+    position:absolute;
+
+    z-index: 2;
+    width: 100%;
+    max-width: 700px;
+
+    text-align: center;
+}
+
+.counter {
+    font-size: 30px;
+
+    font-weight: bold;
+
+    color: rgba(1, 0, 0, 0.926);
+}
+
+
+/* =====================
+   CLOSING
+===================== */
+
+.closing {
+    min-height: 70vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+
+    background:
+        linear-gradient(
+            rgba(70, 20, 30, 0.65),
+            rgba(70, 20, 30, 0.65)
+        ),
+        url("foto/foto2.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.closing-content {
+    max-width: 650px;
+}
+
+.heart {
+    font-size: 70px;
+
+    animation: heartbeat 1.5s infinite;
+}
+
+.closing h2 {
+    font-size: 45px;
+
+    margin: 20px 0;
+}
+
+.closing p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.big-love {
+    margin-top: 30px;
+
+    font-size: 35px !important;
+
+    font-style: italic;
+}
+
+
+/* =====================
+   FOOTER
+===================== */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background: #321c22;
+
+    color: white;
+}
+
+
+/* =====================
+   ANIMATION
+===================== */
+
+@keyframes heartbeat {
+
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.15);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+/* =====================
+   MOBILE
+===================== */
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .section {
+        padding: 70px 18px;
+    }
+
+    .section h2 {
+        font-size: 32px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .photo {
+        height: 350px;
+    }
+
+    .letter {
+        padding: 25px;
+    }
+
+    .closing h2 {
+        font-size: 32px;
+    }
+
+    .music-btn {
+        right: 10px;
+        top: 10px;
+    }
+
+}
