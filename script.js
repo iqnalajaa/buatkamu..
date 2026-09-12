@@ -11,13 +11,13 @@ function toggleMusic() {
 
         musik.play();
 
-        musicText.innerText = "Matikan Musik";
+        musicText.innerText = "Stop Music";
 
     } else {
 
         musik.pause();
 
-        musicText.innerText = "Putar Musik";
+        musicText.innerText = "Play Music";
 
     }
 
@@ -69,6 +69,16 @@ function updateCounter() {
     document.getElementById("counter").innerHTML =
         `${hari} Hari ${jam} Jam ${menit} Menit ${detik} Detik`;
 
+}
+
+function bukaPesan() {
+    const musik = document.getElementById("musiks");
+    musik.play();
+    const pesan = document.getElementById("pesan");
+    pesan.style.display = "block";
+    pesan.scrollIntoView({ 
+        behavior: "smooth"
+    });
 }
 
 setInterval(updateCounter, 1000);

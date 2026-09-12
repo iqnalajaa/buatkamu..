@@ -14,6 +14,7 @@ body {
     color: #3d2b2e;
 }
 
+
 /* =====================
    MUSIC BUTTON
 ===================== */
@@ -165,7 +166,7 @@ body {
 .subtitle {
     letter-spacing: 4px;
     font-size: 12px;
-    color:  #a84e61;
+    color: #ffffff;
 
     margin-bottom: 15px;
 }
@@ -173,6 +174,10 @@ body {
 .section h2 {
     font-size: 40px;
     margin-bottom: 40px;
+}
+
+.pesan {
+    display: none;
 }
 
 
